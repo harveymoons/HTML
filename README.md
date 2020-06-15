@@ -25,4 +25,24 @@
 <td><input type="text" class="input03 wdt230px" data-columns="3"/></td>
 <td><input type="text" class="input03 wdt230px" data-columns="4" th:name="${row.COL_NAME}" disabled/></td>
 ```
+```js
+function getDataColumns() {
+	
+	const dataArr = [];
+	
+	document.querySelectorAll("tbody input[type=checkbox]:checked").forEach(item => {
+		
+		const row = item.parentElement.parentElement;
+		
+		dataArr.push({
+			RULE_NAME: row.querySelector("[data-columns='RULE_NAME']").value,
+			COL_NAME : row.querySelector("[data-columns='COL_NAME']").textContent,
+			COND_TYPE: row.querySelector("[data-columns='COND_TYPE']").value,
+			COND_VAL : row.querySelector("[data-columns='COND_VAL']").value,
+			VAL_MAX  : row.querySelector("[data-columns='VAL_MAX']").value,
+		});
+	});
+	
+}
+```
 [Ref.] https://developer.mozilla.org/ko/docs/Learn/HTML/Howto/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%86%8D%EC%84%B1_%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0  
