@@ -22,8 +22,9 @@
 ```
 ###### data attribute
 ```html
-<td><input type="text" class="input03 wdt230px" data-columns="3"/></td>
-<td><input type="text" class="input03 wdt230px" data-columns="4" th:name="${row.COL_NAME}" disabled/></td>
+<td><div type="text" th:text="${row.COL_TITLE}" data-columns="COL_NAME"></div></td>
+<td><input type="text" class="input03 wdt230px" data-columns="COND_VAL"/></td>
+<td><input type="text" class="input03 wdt230px" data-columns="VAL_MAX" th:name="${row.COL_NAME}" disabled/></td>
 ```
 ```js
 function getDataColumns() {
