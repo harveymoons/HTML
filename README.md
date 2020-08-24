@@ -62,3 +62,11 @@ function getDataColumns() {
     <div th:include="html/member/inner/email/list"></div>
 </div>
 ```
+  
+###### dl / dt / dd
+```html
+<dl>
+	<dt>title</dt>
+	<dd>description</dd>
+</dl>
+```
