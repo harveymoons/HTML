@@ -4,6 +4,7 @@
 ###### autocomplete off / `input` tag
 ```html
 <input autocomplete="off" type="text" name="address"/>
+<input type="email" class="form-control" id="email" name="email" placeholder="harvey@hellomarket.com" autocomplete="off">
 ```
 ###### form submit
 ```html
