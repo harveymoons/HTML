@@ -71,3 +71,8 @@ function getDataColumns() {
 	<dd>description</dd>
 </dl>
 ```
+  
+###### input[type=file]
+```html
+<input type="file" accept=".xls">
+```
